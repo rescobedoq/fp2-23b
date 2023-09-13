@@ -1,5 +1,5 @@
 import java.util.*;
-class Notas2{
+class Notas3{
   public static void main(String args[]){
    double[] percents = new double[6];
    percents[0] = 0.05;
@@ -12,7 +12,7 @@ class Notas2{
    char keyboard = 'a';
    String student;
    double note = 0;
-   double average 0 ;
+   double average = 0 ;
    do{
     
     System.out.println("Ingrese nombre del alumno: ");

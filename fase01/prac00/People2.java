@@ -6,20 +6,20 @@ public class People2{
     Persona[] agenda= new Persona[5];
     String n;
     boolean g;
-    int i = 0;
+    int i = 0,j=0;
     do{
 
     n = JOptionPane.showInputDialog(null,"Ingresar nombre");
     if(!n.equals("q")){
 
     g = Boolean.parseBoolean(JOptionPane.showInputDialog(null,"Ingresar genero"));
-    agenda[i] = new Persona(n);
-    agenda[i].setGender(g);
-    i++;
+    agenda[j] = new Persona(n);
+    agenda[j].setGender(g);
+    j++;
     }
     }while(!n.equals("q"));
 		System.out.println("Total: "+agenda.length+"personas");
-	  for (i = 0; i < agenda.length; i++){
+	  for (i = 0; i < j; i++){
       System.out.println("Nombre: " + agenda[i].getName() + "\t" + agenda[i].getGender());
     }
   }

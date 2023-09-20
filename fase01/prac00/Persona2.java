@@ -11,7 +11,7 @@ public class Persona2{
   }
   
   public void setGender(String c){
-    this.gender = c;
+     this.gender = c;
   }
 
   public String getName(){
@@ -19,9 +19,10 @@ public class Persona2{
   }
   
   public String getGender(){
+    if(gender == null)
+      return "-";
     if(this.gender.equals("M"))return "Masculino";
     if(this.gender.equals("F"))return "Femenino";
-    if(this.gender.equals(null))return "-";
     return "-";
   }
 }

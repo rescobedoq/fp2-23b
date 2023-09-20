@@ -12,7 +12,7 @@ public class People3{
     n = JOptionPane.showInputDialog(null,"Ingresar nombre");
     if(!n.equals("q")){
     g = JOptionPane.showInputDialog(null,"Seleccione genero",
-    "COLORES", JOptionPane.QUESTION_MESSAGE, null,
+    "Genero", JOptionPane.QUESTION_MESSAGE, null,
     new Object[] { "Seleccione","Masculino", "Femenino"},"Seleccione");
    // g = Boolean.parseBoolean(JOptionPane.showInputDialog(null,"Ingresar genero"));
     agenda[j] = new Persona2(n);
@@ -23,9 +23,7 @@ public class People3{
       case "Femenino": agenda[j].setGender("F");
                        break;
 
-      case "Seleccione": agenda[j].setGender(null);
-                      
-                       break;
+
       default: agenda[j].setGender(null);
     }
     

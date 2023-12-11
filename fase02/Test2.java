@@ -28,14 +28,14 @@ class Bicycle2{
     {
       name = n;
       this.dni = dni;
-      Bicycle2[] misBicis = new Bicycle2[1];
+      this.misBicis = new Bicycle2[1];
     }
     String getName(){
       return name;
     }
     void addBicycle(Bicycle2 bici){
     	int tm = misBicis.length;
-	misBicis[tm] = bici;
+	misBicis[tm-1] = bici;
     }
     Bicycle2[] getBicycle(){
     	return misBicis;
@@ -44,7 +44,7 @@ class Bicycle2{
   class Test2{
    public static void main(String[] args){
     Owner ricardo = new Owner("Ricardo", 12345);
-    Bicycle2 bici = new Bicycle2("rojo", "Generica", 001, 2.5, "Mountanier", true);
+    Bicycle2 bici = new Bicycle2("rojo", "Generica", 17, 2.5, "Mountanier", true);
     ricardo.addBicycle(bici);
     System.out.println("El propietario " + ricardo.getName() + ", tiene las bicicetas : ");
     Bicycle2[] tmp = ricardo.getBicycle();
